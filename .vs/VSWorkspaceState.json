@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\models",
+    "\\public",
+    "\\public\\images",
+    "\\public\\stylesheet",
+    "\\routes",
+    "\\view"
+  ],
+  "SelectedNode": "\\view\\blog.pug",
+  "PreviewInSolutionExplorer": false
+}
