@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8"/>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"925a5a5ce7","applicationID":"11706301","transactionName":"Jg1YQBAJDlkEFhpAWhEHGUQDAQdGTgdZRlEXB1dQGzkOWgYNWw==","queueTime":2,"applicationTime":309,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+    <title>Log In | Fitness &amp; Training | Gym | UFC GYM</title>
+<meta name='description' content="Get better results, faster at UFC GYM and find out what it means to Train Different with the largest variety of classes, world-class coaching, and a motivating community you won’t find anywhere else.">
+<meta content="Train Different" name="keywords"/>
+    <!-- OG Metadata -->
+<meta content="1058962990810268" property="og:app_id">
+<meta content="Train Different at Be3Fit" property="og:title"/>
+<meta content="Checking out UFC GYM because I&#39;m ready for real results. Get your free pass and come join me—the couch will be there later." property="og:description"/>
+<meta content="https://d18e80b7izstoq.cloudfront.net/assets/social_share/UFC_Social_Facebook-0c8bc63fa53a634862a4ecc343a50b22.png" property="og:image"/>
+
+<!-- Twitter Metadata -->
+<meta content="Train Different at Be3Fit" name="twitter:title"/>
+<meta content="Do yourself a favor. Grab a free pass and get down to UFC GYM, then thank me later for how good you look." name="twitter:description"/>
+<meta content="@be3fit" name="twitter:site"/>
+<meta content="@be3fit" name="twitter:creator"/>
+<meta content="https://d18e80b7izstoq.cloudfront.net/assets/social_share/UFC_Social_Twitter-b9a4e67163bd8da7ec5ee84b8f2c8c2b.png" name="twitter:image"/>
+<meta content="summary_large_image" name="twitter:card">
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+    <script>
+  window.globals = {};
+  (function(d,s,i,r) {
+    if (d.getElementById(i)){return;}
+    var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+    n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/1656882.js';
+    e.parentNode.insertBefore(n, e);
+  })(document,"script","hs-analytics",300000);
+</script>
+    <!-- Hotjar Tracking Code for be3fit.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:413157,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+    <!-- Global site tag (gtag.js) - Google Ads: 987489063 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-987489063"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-987489063'); </script>
+<!-- custom gtag behavior if necessary -->
+
+    <script src="https://use.typekit.net/uhx2flb.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <link rel="stylesheet" media="screen" href="//d18e80b7izstoq.cloudfront.net/assets/application-fa600ebb6ed478672c61f51c61f266bf.css" />
+    <link rel="stylesheet" media="print" href="//d18e80b7izstoq.cloudfront.net/assets/print-e3510549956f65033375aa20b1be47a0.css" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="jI1bQSDT08iYROMP243WdhsdQPilpylVPNFXueqxPEU2/5Bd+DJV85ZeDLwK5/KN7L6MLfs+aE44JLZlauZz1w==" />
+  </head>
+  <body class="document-body " data-document-body="true" data-microsite-location-slug="">
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5M7ZNRT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-5M7ZNRT');</script>
+<!-- End Google Tag Manager -->
+
+    <!--[if lte IE 9 ]>
+      <script>
+        window.location.replace("/upgrade");
+      </script>
+    <![endif]-->
+
+      <header class="global-header">
+  <nav class="main-nav" data-menu-nav="true">
+  <h3 class="main-nav__title">MENU<button class="main-nav__close" data-menu-close="true">Close <i class="icon-close"></i></button></h3>
+  <div class="main-nav__main-menu main-menu" data-main-menu="true">
+  <ul class="main-menu__list">
+    <li class="main-menu__menu-item main-menu__menu-item--has-submenu  " data-menu-submenu="true"><a class="main-menu__menu-link" tabindex="301" href="#"><span>Programs &amp; Classes</span></a>
+      <div class="main-menu__submenu" data-sub-menu="true">
+        <ul class="main-menu__submenu-list">
+          <li class="main-menu__submenu-item main-menu__submenu-item--mobile-hide"><a class="main-menu__submenu-link" tabindex="501" data-activity-nav-link="true" href="#"><span>Training</span></a></li>
+          <li class="main-menu__submenu-item main-menu__submenu-item--mobile-show "><a class="main-menu__submenu-link" tabindex="502" data-ga-category="Nav" data-ga-action="InstraSite" data-ga-label="General Fitness" data-ga-delay="true" href="http://be3fit.com/general-fitness">General Fitness</a></li>
+          <li class="main-menu__submenu-item main-menu__submenu-item--mobile-show "><a class="main-menu__submenu-link" tabindex="503" data-ga-category="Nav" data-ga-action="InstraSite" data-ga-label="Personal Training" data-ga-delay="true" href="http://be3fit.com/personal-training">Personal Training</a></li>
+          <li class="main-menu__submenu-item main-menu__submenu-item--mobile-show "><a class="main-menu__submenu-link" tabindex="504" data-ga-category="Nav" data-ga-action="InstraSite" data-ga-label="Coaches and Instructors" data-ga-delay="true" href="http://be3fit.com/coaches">Coaches &amp; Instructors</a></li>
+            <li class="main-menu__submenu-item "><a class="main-menu__submenu-link" tabindex="505" data-activity-nav-link="true" data-ga-category="Nav" data-ga-action="InstraSite" data-ga-label="Functional Fitness" data-ga-delay="true" href="http://be3fit.com/functional-fitness"><span>Functional Fitness</span></a></li>
+            <li class="main-menu__submenu-item "><a class="main-menu__submenu-link" tabindex="506" data-activity-nav-link="true" data-ga-category="Nav" data-ga-action="InstraSite" data-ga-label="Mixed Martial Arts" data-ga-delay="true" href="http://be3fit.com/mma-new"><span>Mixed Martial Arts</span></a></li>
+          <li class="main-menu__submenu-item "><a class="main-menu__submenu-link" tabindex="507" data-activity-nav-link="true" data-ga-category="Nav" data-ga-action="InstraSite" data-ga-label="Brazilian Jiu-Jitsu" data-ga-delay="true" href="http://be3fit.com/brazilian-jiu-jitsu"><span>Brazilian Jiu-Jitsu</span></a></li>
+            <li class="main-menu__submenu-item "><a class="main-menu__submenu-link" tabindex="508" data-activity-nav-link="true" data-ga-category="Nav" data-ga-action="InstraSite" data-ga-label="Youth Classes" data-ga-delay="true" href="http://be3fit.com/youth-classes"><span>Youth Classes</span></a></li>
+            <li class="main-menu__submenu-item "><a class="main-menu__submenu-link" tabindex="509" data-activity-nav-link="true" data-ga-category="Nav" data-ga-action="InstraSite" data-ga-label="Group Fit" data-ga-delay="true" href="http://be3fit.com/group-fitness"><span>Group Fit</span></a></li>
+        </ul>
+        <div class="main-menu__submenu-active-bar" data-sub-menu-active-bar="true"></div>
+      </div>
+    </li>
+    <li class="main-menu__menu-item "><a class="main-menu__menu-link" tabindex="302" data-ga-category="Nav" data-ga-action="InstraSite" data-ga-label="Train Different" data-ga-delay="true" href="http://be3fit.com/train-different">
+      <span>Train Different&reg;</span>
+    </a></li>
+    <li class="main-menu__menu-item"><a class="main-menu__menu-link" tabindex="303" data-ga-category="Nav" data-ga-action="InstraSite" data-ga-label="Blog" data-ga-delay="true" href="http://blog.be3fit.com/">
+      <span>Blog</span>
+    </a></li>
+      <li class="main-menu__menu-item main-menu__menu-item--join" data-main-menu-featured="true"><a class="main-menu__menu-link main-menu__menu-link--join" tabindex="304" data-ga-category="Nav" data-ga-action="InstraSite" data-ga-label="Join Now" data-ga-delay="true" href="/locations?source=memberships"><span>Join Now</span></a></li>
+      <li class="main-menu__menu-item main-menu__menu-item--pass" data-main-menu-featured="true"><a class="main-menu__menu-link main-menu__menu-link--pass" tabindex="305" data-ga-category="Nav" data-ga-action="InstraSite" data-ga-label="Free Pass" data-ga-delay="true" href="http://be3fit.com/get-a-guest-pass"><span>Free Pass</span></a></li>
+  </ul>
+  <div class="main-menu__active-bar" data-main-menu-active-bar="true"></div>
+</div>
+
+    <ul class="main-nav__super-menu super-menu">
+    <li class="super-menu__menu-item"><a class="super-menu__menu-link" href="/international">International Gyms</a></li>
+    <li class="super-menu__menu-item"><a class="super-menu__menu-link" target="_blank" tabindex="101" data-ga-category="Header" data-ga-action="InstraSite" data-ga-label="Own a UFC GYM" href="http://be3fitfranchise.com/">Own a UFC GYM</a></li>
+    <li class="super-menu__menu-item"><a class="super-menu__menu-link" target="_blank" tabindex="102" data-ga-category="Header" data-ga-action="InstraSite" data-ga-label="Shop" href="http://www.ufcstore.com/ufc_gym">Shop</a></li>
+    <li class="super-menu__menu-item"><a class="super-menu__menu-link" tabindex="103" data-ga-category="Header" data-ga-action="InstraSite" data-ga-label="Member Login" href="http://be3fit.com/login">
+      <i class="icon-user-alt"></i> Member Login
+    </a></li>
+    <li class="super-menu__menu-item"><a class="super-menu__menu-link super-menu__menu-link--privacy" tabindex="104" data-ga-category="Header" data-ga-action="InstraSite" data-ga-label="Privacy Policy" href="http://be3fit.com/privacy">Privacy Policy</a></li>
+  </ul>
+
+  
+<div class="main-nav-menu social-menu">
+<a class="social-menu__menu-link icon-facebook" target="_blank" tabindex="306" data-ga-category="Nav" data-ga-action="Social" data-ga-label="Facebook" href="https://www.facebook.com/be3fit/">Facebook</a>
+<a class="social-menu__menu-link icon-twitter" target="_blank" tabindex="307" data-ga-category="Nav" data-ga-action="Social" data-ga-label="Twitter" href="https://twitter.com/be3fit">Twitter</a>
+<a class="social-menu__menu-link icon-youtube" target="_blank" tabindex="308" data-ga-category="Nav" data-ga-action="Social" data-ga-label="Youtube" href="https://www.youtube.com/user/be3fit">Youtube</a>
+<a class="social-menu__menu-link icon-instagram" target="_blank" tabindex="309" data-ga-category="Nav" data-ga-action="Social" data-ga-label="Instagram" href="https://www.instagram.com/be3fit/">Instagram</a>
+<a class="social-menu__menu-link icon-radio" target="_blank" tabindex="310" data-ga-category="Nav" data-ga-action="Social" data-ga-label="Radio" href="http://be3fitradio.podbean.com/">Radio</a>
+</div>
+
+</nav>
+
+  <nav class="super-nav" data-super-nav="true" data-populated="false"></nav>
+  <nav class="activity-nav__container" data-activity-nav-container="true">
+  <div class="activity-nav__content" data-activity-nav-content="true">
+    <div class="activity-nav" data-activity-nav="true">
+      <ul class="activity-nav__list activity-nav__list--training">
+        <li class="activity-nav__item activity-nav__item--training"><a class="activity-nav__link--general-fitness" tabindex="601" data-activity-nav-content-link="true" aria-label="General Fitness" href="http://be3fit.com/general-fitness">          <span class="activity-nav__link-text">GENERAL FITNESS</span>
+        </a></li>
+        <li class="activity-nav__item activity-nav__item--training"><a class="activity-nav__link--training-personal" tabindex="602" data-activity-nav-content-link="true" aria-label="Personal Training" href="http://be3fit.com/personal-training">          <span class="activity-nav__link-text">PERSONAL TRAINING</span>
+        </a></li>
+        <li class="activity-nav__item activity-nav__item--training"><a class="activity-nav__link--training-coaches" tabindex="603" data-activity-nav-content-link="true" aria-label="Coaches &amp; Instructors" href="http://be3fit.com/coaches">          <span class="activity-nav__link-text">COACHES &amp; INSTRUCTORS</span>
+        </a></li>
+      </ul>
+    </div>
+      <div class="activity-nav activity-nav--small" data-activity-nav="true">
+  <ul class="activity-nav__list">
+      <li class="activity-nav__item activity-nav__item--small"><a class="activity-nav__link" tabindex="801" data-activity-nav-content-link="true" href="http://be3fit.com/classes/boxing-conditioning"><i class="icon-activity-boxing-conditioning"></i> Boxing Conditioning</a></li>
+      <li class="activity-nav__item activity-nav__item--small"><a class="activity-nav__link" tabindex="802" data-activity-nav-content-link="true" href="http://be3fit.com/classes/daily-ultimate-training-d-u-t"><i class="icon-activity-functional-fitness-dut"></i> Daily Ultimate Training (D.U.T)®</a></li>
+      <li class="activity-nav__item activity-nav__item--small"><a class="activity-nav__link" tabindex="803" data-activity-nav-content-link="true" href="http://be3fit.com/classes/family-daily-ultimate-training-d-u-t"><i class="icon-activity-functional-fitness-dut-2-0"></i> Family D.U.T™</a></li>
+      <li class="activity-nav__item activity-nav__item--small"><a class="activity-nav__link" tabindex="804" data-activity-nav-content-link="true" href="http://be3fit.com/classes/fight-fit"><i class="icon-activity-fight-fit"></i> Fight Fit</a></li>
+      <li class="activity-nav__item activity-nav__item--small"><a class="activity-nav__link" tabindex="805" data-activity-nav-content-link="true" href="http://be3fit.com/classes/kickboxing-conditioning"><i class="icon-activity-kickboxing-conditioning"></i> Kickboxing Conditioning</a></li>
+      <li class="activity-nav__item activity-nav__item--small"><a class="activity-nav__link" tabindex="806" data-activity-nav-content-link="true" href="http://be3fit.com/classes/matrx"><i class="icon-activity-functional-fitness-matrx"></i> MATRX</a></li>
+      <li class="activity-nav__item activity-nav__item--small"><a class="activity-nav__link" tabindex="807" data-activity-nav-content-link="true" href="http://be3fit.com/classes/stretching-for-performance"><i class="icon-activity-stretching-for-performance"></i> Stretching for Performance</a></li>
+      <li class="activity-nav__item activity-nav__item--small"><a class="activity-nav__link" tabindex="808" data-activity-nav-content-link="true" href="http://be3fit.com/classes/trx"><i class="icon-activity-functional-fitness-trx-training"></i> TRX</a></li>
+      <li class="activity-nav__item activity-nav__item--small"><a class="activity-nav__link" tabindex="809" data-activity-nav-content-link="true" href="http://be3fit.com/classes/ufc-fit"><i class="icon-activity-group-fitness-ufc-fit"></i> UFC FIT®</a></li>
+  </ul>
+</div>
+
+      <div class="activity-nav activity-nav--normal" data-activity-nav="true">
+  <ul class="activity-nav__list">
+      <li class="activity-nav__item activity-nav__item--normal"><a class="activity-nav__link" tabindex="901" data-activity-nav-content-link="true" href="http://be3fit.com/classes/boxing-skills-and-techniques"><i class="icon-activity-mma-boxing-skills-techniques"></i> Boxing Skills and Techniques</a></li>
+      <li class="activity-nav__item activity-nav__item--normal"><a class="activity-nav__link" tabindex="902" data-activity-nav-content-link="true" href="http://be3fit.com/classes/brazilian-jiu-jitsu-gi"><i class="icon-activity-brazilian-jiu-jitsu-gi-level-1"></i> Brazilian Jiu-Jitsu (Gi)</a></li>
+      <li class="activity-nav__item activity-nav__item--normal"><a class="activity-nav__link" tabindex="903" data-activity-nav-content-link="true" href="http://be3fit.com/classes/brazilian-jiu-jitsu-no-gi"><i class="icon-activity-brazilian-jiu-jitsu-no-gi"></i> Brazilian Jiu-Jitsu (No Gi)</a></li>
+      <li class="activity-nav__item activity-nav__item--normal"><a class="activity-nav__link" tabindex="904" data-activity-nav-content-link="true" href="http://be3fit.com/classes/kickboxing-skills-and-techniques"><i class="icon-activity-kickboxing-skills-technique"></i> Kickboxing Skills and Techniques</a></li>
+      <li class="activity-nav__item activity-nav__item--normal"><a class="activity-nav__link" tabindex="905" data-activity-nav-content-link="true" href="http://be3fit.com/classes/mma"><i class="icon-activity-mma"></i> MMA</a></li>
+      <li class="activity-nav__item activity-nav__item--normal"><a class="activity-nav__link" tabindex="906" data-activity-nav-content-link="true" href="http://be3fit.com/classes/muay-thai"><i class="icon-activity-muay-thai"></i> Muay Thai</a></li>
+      <li class="activity-nav__item activity-nav__item--normal"><a class="activity-nav__link" tabindex="907" data-activity-nav-content-link="true" href="http://be3fit.com/classes/pro-class"><i class="icon-activity-mma"></i> Pro Class</a></li>
+      <li class="activity-nav__item activity-nav__item--normal"><a class="activity-nav__link" tabindex="908" data-activity-nav-content-link="true" href="http://be3fit.com/classes/self-defense"><i class="icon-activity-self-defense"></i> Self Defense</a></li>
+      <li class="activity-nav__item activity-nav__item--normal"><a class="activity-nav__link" tabindex="909" data-activity-nav-content-link="true" href="http://be3fit.com/classes/striking"><i class="icon-activity-striking"></i> Striking</a></li>
+      <li class="activity-nav__item activity-nav__item--normal"><a class="activity-nav__link" tabindex="910" data-activity-nav-content-link="true" href="http://be3fit.com/classes/womens-boxing-conditioning"><i class="icon-activity-boxing-conditioning"></i> Women&#39;s Boxing Conditioning</a></li>
+      <li class="activity-nav__item activity-nav__item--normal"><a class="activity-nav__link" tabindex="911" data-activity-nav-content-link="true" href="http://be3fit.com/classes/womens-brazilian-jiu-jitsu-gi"><i class="icon-activity-brazilian-jiu-jitsu-women-gi"></i> Women&#39;s Brazilian Jiu-Jitsu (Gi)</a></li>
+  </ul>
+</div>
+
+    <div class="bjj-nav" data-activity-nav="true">
+      <ul class="bjj-nav__page-list">
+        <li class="bjj-nav__page-item"><a class="bjj-nav__page-link" tabindex="1101" data-activity-nav-content-link="true" href="http://be3fit.com/brazilian-jiu-jitsu">Overview</a></li>
+        <li class="bjj-nav__page-item"><a class="bjj-nav__page-link" tabindex="1102" data-activity-nav-content-link="true" href="http://be3fit.com/brazilian-jiu-jitsu/coaches">Coaches</a></li>
+        <li class="bjj-nav__page-item"><a class="bjj-nav__page-link" tabindex="1103" data-activity-nav-content-link="true" href="http://be3fit.com/brazilian-jiu-jitsu/belts">Belts &amp; Stripe Promotion</a></li>
+        <li class="bjj-nav__page-item"><a class="bjj-nav__page-link" tabindex="1104" data-activity-nav-content-link="true" href="http://be3fit.com/brazilian-jiu-jitsu/locations">Locations</a></li>
+        <!-- <li class="bjj-nav__page-item"><a class="bjj-nav__page-link" tabindex="1105" data-activity-nav-content-link="true" href="http://be3fit.com/brazilian-jiu-jitsu/events">Events</a></li> -->
+        <li class="bjj-nav__page-item"><a class="bjj-nav__page-link" tabindex="1106" data-activity-nav-content-link="true" href="http://be3fit.com/brazilian-jiu-jitsu/faq">FAQ</a></li>
+        <li class="bjj-nav__page-item"><a class="bjj-nav__page-link" tabindex="1107" data-activity-nav-content-link="true" href="http://be3fit.com/brazilian-jiu-jitsu/rules">Mat Rules</a></li>
+        <li class="bjj-nav__page-item"><a class="bjj-nav__page-link" tabindex="1108" data-activity-nav-content-link="true" href="http://be3fit.com/brazilian-jiu-jitsu/tips">Training Tips</a></li>
+      </ul>
+      <ul class="bjj-nav__class-list">
+        <li class="bjj-nav__class-item"><a class="bjj-nav__class-link bjj-nav__class-link--adult-gi" tabindex="1109" data-activity-nav-content-link="true" aria-label="Adult BJJ (GI)" href="http://be3fit.com/classes/brazilian-jiu-jitsu-gi">          <span class="bjj-nav__class-link-text">ADULT BJJ (GI)
+            <span class="bjj-nav__class-link-subtext">Level 1, 2, &amp; 3 (Age: 16+)</span>
+          </span>
+        </a></li>
+        <li class="bjj-nav__class-item"><a class="bjj-nav__class-link bjj-nav__class-link--adult-no-gi" tabindex="1110" data-activity-nav-content-link="true" aria-label="Adult BJJ (No GI)" href="http://be3fit.com/classes/brazilian-jiu-jitsu-no-gi">          <span class="bjj-nav__class-link-text">ADULT BJJ (NO GI)
+            <span class="bjj-nav__class-link-subtext">(Age: 16+)</span>
+          </span>
+        </a></li>
+        <li class="bjj-nav__class-item"><a class="bjj-nav__class-link bjj-nav__class-link--womens" tabindex="1111" data-activity-nav-content-link="true" aria-label="Women&#39;s BJJ (GI)" href="http://be3fit.com/classes/womens-brazilian-jiu-jitsu-gi">          <span class="bjj-nav__class-link-text">WOMEN'S BJJ (GI)
+            <span class="bjj-nav__class-link-subtext">Level 1, 2, &amp; 3 (Age: 16+)</span>
+          </span>
+        </a></li>
+        <li class="bjj-nav__class-item"><a class="bjj-nav__class-link bjj-nav__class-link--youth-gi" tabindex="1112" data-activity-nav-content-link="true" aria-label="Youth BJJ (GI)" href="http://be3fit.com/classes/youth-brazilian-jiu-jitsu-gi">          <span class="bjj-nav__class-link-text">YOUTH BJJ (GI)
+            <span class="bjj-nav__class-link-subtext">Level 1, &amp; 2 (Age: 6-15)</span>
+          </span>
+        </a></li>
+        <li class="bjj-nav__class-item"><a class="bjj-nav__class-link bjj-nav__class-link--youth-no-gi" tabindex="1113" data-activity-nav-content-link="true" aria-label="Youth BJJ (No GI)" href="http://be3fit.com/classes/youth-brazilian-jiu-jitsu-no-gi">          <span class="bjj-nav__class-link-text">YOUTH BJJ (NO GI)
+            <span class="bjj-nav__class-link-subtext">(Age: 6-15)</span>
+          </span>
+        </a></li>
+      </ul>
+    </div>
+      <div class="activity-nav activity-nav--small" data-activity-nav="true">
+  <ul class="activity-nav__list">
+      <li class="activity-nav__item activity-nav__item--small"><a class="activity-nav__link" tabindex="1001" data-activity-nav-content-link="true" href="http://be3fit.com/classes/youth-boxing"><i class="icon-activity-youth-boxing"></i> Youth Boxing</a></li>
+      <li class="activity-nav__item activity-nav__item--small"><a class="activity-nav__link" tabindex="1002" data-activity-nav-content-link="true" href="http://be3fit.com/classes/youth-brazilian-jiu-jitsu-gi"><i class="icon-activity-youth-brazilian-jiu-jitsu"></i> Youth Brazilian Jiu-Jitsu (Gi)</a></li>
+      <li class="activity-nav__item activity-nav__item--small"><a class="activity-nav__link" tabindex="1003" data-activity-nav-content-link="true" href="http://be3fit.com/classes/youth-brazilian-jiu-jitsu-no-gi"><i class="icon-activity-youth-brazilian-jiu-jitsu-no-gi"></i> Youth Brazilian Jiu-Jitsu (No Gi)</a></li>
+      <li class="activity-nav__item activity-nav__item--small"><a class="activity-nav__link" tabindex="1004" data-activity-nav-content-link="true" href="http://be3fit.com/classes/youth-daily-ultimate-training-d-u-t"><i class="icon-activity-youth-daily-ultimate-training"></i> Youth D.U.T™</a></li>
+      <li class="activity-nav__item activity-nav__item--small"><a class="activity-nav__link" tabindex="1005" data-activity-nav-content-link="true" href="http://be3fit.com/classes/youth-fight-fit"><i class="icon-activity-youth-fight-fit"></i> Youth Fight Fit</a></li>
+      <li class="activity-nav__item activity-nav__item--small"><a class="activity-nav__link" tabindex="1006" data-activity-nav-content-link="true" href="http://be3fit.com/classes/youth-kickboxing"><i class="icon-activity-youth-boxing"></i> Youth Kickboxing</a></li>
+      <li class="activity-nav__item activity-nav__item--small"><a class="activity-nav__link" tabindex="1007" data-activity-nav-content-link="true" href="http://be3fit.com/classes/youth-mma"><i class="icon-activity-youth-mma"></i> Youth MMA</a></li>
+      <li class="activity-nav__item activity-nav__item--small"><a class="activity-nav__link" tabindex="1008" data-activity-nav-content-link="true" href="http://be3fit.com/classes/youth-muay-thai"><i class="icon-activity-muay-thai"></i> Youth Muay Thai</a></li>
+      <li class="activity-nav__item activity-nav__item--small"><a class="activity-nav__link" tabindex="1009" data-activity-nav-content-link="true" href="http://be3fit.com/classes/youth-wrestling"><i class="icon-activity-wrestling"></i> Youth Wrestling</a></li>
+  </ul>
+</div>
+
+      <div class="activity-nav activity-nav--large" data-activity-nav="true">
+  <ul class="activity-nav__list">
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="701" data-activity-nav-content-link="true" href="http://be3fit.com/classes/athletic-stretch"><i class="icon-activity-athletic-stretch"></i> Athletic Stretch</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="702" data-activity-nav-content-link="true" href="http://be3fit.com/classes/barre-less-barre"><i class="icon-activity-group-fitness-brutal-barre"></i> Barre-less Barre</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="703" data-activity-nav-content-link="true" href="http://be3fit.com/classes/below-the-belt"><i class="icon-activity-below-the-belt"></i> Below the Belt</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="704" data-activity-nav-content-link="true" href="http://be3fit.com/classes/cardio-funk-dance-party"><i class="icon-activity-group-fitness-cardio-funk"></i> Cardio Funk Dance Party</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="705" data-activity-nav-content-link="true" href="http://be3fit.com/classes/circuit-breaker"><i class="icon-activity-group-fitness-insanity-circuit-breaker"></i> Circuit Breaker</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="706" data-activity-nav-content-link="true" href="http://be3fit.com/classes/dyna-max"><i class="icon-activity-group-fitness-ufc-fit"></i> dynaMAX</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="707" data-activity-nav-content-link="true" href="http://be3fit.com/classes/energizing-yoga"><i class="icon-activity-group-fitness-power-yoga"></i> Energizing Yoga</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="708" data-activity-nav-content-link="true" href="http://be3fit.com/classes/fusion-flow"><i class="icon-activity-yoga-groove"></i> Fusion Flow</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="709" data-activity-nav-content-link="true" href="http://be3fit.com/classes/high-octane-conditioning"><i class="icon-activity-group-fitness-high-octane-conditioning"></i> High Octane Conditioning</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="710" data-activity-nav-content-link="true" href="http://be3fit.com/classes/hot-hula-fitness"><i class="icon-activity-group-fitness-hot-hula"></i> HOT HULA Fitness®</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="711" data-activity-nav-content-link="true" href="http://be3fit.com/classes/on-the-ropes"><i class="icon-activity-group-fitness-on-the-ropes"></i> J.U.M.P</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="712" data-activity-nav-content-link="true" href="http://be3fit.com/classes/kickass-kick"><i class="icon-activity-group-fitness-cardio-kick"></i> KickAss Kick</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="713" data-activity-nav-content-link="true" href="http://be3fit.com/classes/killer-core"><i class="icon-activity-group-fitness-killer-core"></i> Killer Core</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="714" data-activity-nav-content-link="true" href="http://be3fit.com/classes/killer-cycle"><i class="icon-activity-group-fitness-cycle"></i> Killer Cycle</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="715" data-activity-nav-content-link="true" href="http://be3fit.com/classes/kilocycle"><i class="icon-activity-kilo-cycle"></i> KiloCycle</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="716" data-activity-nav-content-link="true" href="http://be3fit.com/classes/muscle-makeover"><i class="icon-activity-group-fitness-full-body-conditioning"></i> Muscle Makeover</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="717" data-activity-nav-content-link="true" href="http://be3fit.com/classes/p90x-live"><i class="icon-activity-p90x-live"></i> P90X® Live!</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="718" data-activity-nav-content-link="true" href="http://be3fit.com/classes/piyo"><i class="icon-activity-group-fitness-piyo"></i> PiYo®</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="719" data-activity-nav-content-link="true" href="http://be3fit.com/classes/pound-rockout-workout"><i class="icon-activity-group-fitness-pound-rockout-workout"></i> POUND: Rockout. Workout.™</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="720" data-activity-nav-content-link="true" href="http://be3fit.com/classes/power-pilates"><i class="icon-activity-group-fitness-pilates"></i> Power Pilates</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="721" data-activity-nav-content-link="true" href="http://be3fit.com/classes/restorative-yoga"><i class="icon-activity-group-fitness-restorative-yoga"></i> Restorative Yoga</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="722" data-activity-nav-content-link="true" href="http://be3fit.com/classes/r-i-p-p-e-d"><i class="icon-activity-ripped"></i> R.I.P.P.E.D™</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="723" data-activity-nav-content-link="true" href="http://be3fit.com/classes/step-n-strike"><i class="icon-activity-kickboxing-skills-technique"></i> Step n’ Strike</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="724" data-activity-nav-content-link="true" href="http://be3fit.com/classes/s-w-e-a-t"><i class="icon-activity-group-fitness-sweat"></i> S.W.E.A.T</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="725" data-activity-nav-content-link="true" href="http://be3fit.com/classes/total-body-barbell"><i class="icon-activity-group-fitness-barbel-conditioning"></i> Total Body Barbell</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="726" data-activity-nav-content-link="true" href="http://be3fit.com/classes/yoga-flow"><i class="icon-activity-group-fitness-vinyasa-flow-yoga"></i> Yoga Flow</a></li>
+      <li class="activity-nav__item activity-nav__item--large"><a class="activity-nav__link" tabindex="727" data-activity-nav-content-link="true" href="http://be3fit.com/classes/zumba"><i class="icon-activity-group-fitness-zumba"></i> Zumba®</a></li>
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+
+
+  <div class="menu-bar">
+  <a class="menu-bar__home-link" tabindex="201" data-ga-category="Nav" data-ga-action="InstraSite" data-ga-label="UFC GYM Logo" data-ga-delay="true" href="http://be3fit.com/"><img class="menu-bar__ufc-logo" alt="UFC GYM Logo" src="//d18e80b7izstoq.cloudfront.net/assets/ufc-logo-14f1ed1f21b513547404107567394719.svg" /></a>
+  <!--
+  <a class="menu-bar__pass-link" tabindex="-1" data-ga-category="Nav" data-ga-action="InstraSite" data-ga-label="Free Pass" data-ga-delay="true" href="http://be3fit.com/get-a-guest-pass">    Get a Free Pass
+</a>  -->
+
+  <a class="menu-bar__join-link" tabIndex="-1" data-ga-category="Nav" data-ga-action="Intrasite" data-ga-label="Join Now" data-ga-delay="true" href="/locations?source=memberships">    Join Now
+</a>
+  <button class="menu-bar__menu-toggle" data-menu-open aria-label='Open The Menu'><i class="icon-menu"></i></button>
+</div>
+
+  <div class="menu-overlay" data-menu-overlay="true"></div>
+
+</header>
+
+
+    <div class="gdpr-popup" data-gdpr-popup>
+  <div class="gdpr-popup__overlay gdpr-popup__overlay--hidden"></div>
+  <div class="gdpr-popup__modal gdpr-popup__modal--closed">
+    <div class="gdpr-popup__content">
+      <div class="gdpr-popup__copy">
+        We have updated our privacy policy, please review our most recent policy <a class="gdpr-popup__link" href="/privacy">here</a>.  By continuing to use our website, you acknowledge and agree to our most recent policy.  Please feel free to reach out to <a class="gdpr-popup__link" href="mailto:privacy@be3fit.com">Privacy@be3fit.com</a> with any questions.
+      </div>
+      <div>
+        <button class="button gdpr-popup__button" data-gdpr-popup-button>
+          <span class="button__content">
+            Agree
+            <i class="icon-arrow-right"></i>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="main-wrapper " data-main-wrapper="true">
+      <section class="generic-section">
+  <div class="generic-section__content-wrapper">
+    <form action="http://www.clubready.com/Security/Login" method="post" class="login-form">
+
+    <h2 class="login-form__title">Log in To UFC GYM</h2>
+
+  <hr class="login-form__separator">
+
+  <div class="form-layout__input-group login-form__input-group">
+    <input type="text" class="form-layout__text-input text-input login-form__text-input" id="uid" name="uid" placeholder="Username" />
+  </div>
+
+  <div class="form-layout__input-group login-form__input-group">
+    <input type="password" class="form-layout__text-input text-input login-form__text-input" id="pw" name="pw" placeholder="Password" />
+  </div>
+
+  <div class="form-layout__input-group login-form__input-group">
+    <button name="button" type="submit" class="button login-form__submit-button"><span class="button__content">Log In <i class="icon-arrow-right"></i></span></button>
+  </div>
+
+</form>
+
+  </div>
+</section>
+
+
+    </div>
+      <section class="lead-gen-ribbon" data-lead-gen-ribbon="true">
+  <a class="lead-gen-ribbon__link" href="/get-a-guest-pass">TRAIN WITH US FOR <em class="lead-gen-ribbon__link--highlight">FREE <i class="icon-arrow-right"></i></em></a>
+  <button class="lead-gen-ribbon__close-button" data-close="true" aria-label="Close this offer">
+    <i class="icon-close"></i>
+  </button>
+</section>
+
+    <footer class="global-footer" data-global-footer="true">
+  <nav class="footer-social">
+    <div class="footer-social__content-wrapper">
+      <section class="newsletter-signup">
+        <label class="newsletter-signup__title" for="newsletter-signup-email">SIGN UP FOR UPDATES</label>
+          <div class="table-wrapper newsletter-signup__table-wrapper">
+            <div class="table-wrapper__row">
+              <form data-sign-up-request-form="true" action="/api/sign_up_requests" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="fWhxb4/br6nhHqybYzalq7rb/Scyar0oFDCiW9Jix0PHGrpzVzopku8EQyiyXIFQTXgx8mzz/DMQxUOHUjWI0Q==" />
+                <div class="table-wrapper__cell table-wrapper__cell--expanded table-wrapper__cell--align-left">
+                  <input class="text-input text-input--plain newsletter-signup__text-input" type="email" placeholder="Enter your Email Address" name="sign_up_request[email]" data-sign-up-request-form-email="true" id="newsletter-signup-email"/>
+                </div>
+                <div class="table-wrapper__cell">
+                  <button name="button" type="submit" class="button button--collapsed newsletter-signup__cta"><span class="button__content">Sign Up</span></button>
+                </div>
+</form>            </div>
+          </div>
+      </section>
+      <section class="social-links">
+        <h3 class="social-links__title">GET CONNECTED</h3>
+        <ul class="social-links__list">
+          <li class="social-links__item"><a class="social-links__link" target="_blank" aria-label="Connect with UFC Gym on Facebook" href="https://www.facebook.com/be3fit/">            <i class="icon-facebook"><span class="sr-only">Facebook</span></i>
+          </a></li>
+          <li class="social-links__item"><a class="social-links__link" target="_blank" aria-label="Connect with UFC Gym on Twitter" href="https://twitter.com/be3fit">            <i class="icon-twitter"><span class="sr-only">Twitter</span></i>
+          </a></li>
+          <li class="social-links__item"><a class="social-links__link" target="_blank" aria-label="Connect with UFC Gym on YouTube" href="https://www.youtube.com/user/be3fit">            <i class="icon-youtube"><span class="sr-only">Youtube</span></i>
+          </a></li>
+          <li class="social-links__item"><a class="social-links__link" target="_blank" aria-label="Connect with UFC Gym on Instagram" href="https://www.instagram.com/be3fit/">            <i class="icon-instagram"><span class="sr-only">Instagram</span></i>
+          </a></li>
+        </ul>
+      </section>
+    </div>
+  </nav>
+  <nav class="footer-nav">
+    <div class="footer-nav__content-wrapper">
+      <section class="footer-links">
+        <ul class="footer-links__list">
+          <li class="footer-links__item"><a class="footer-links__link" href="http://be3fit.com/about">About</a></li>
+          <li class="footer-links__item"><a class="footer-links__link" href="http://be3fit.com/newsroom">Newsroom</a></li>
+          <li class="footer-links__item"><a class="footer-links__link" href="http://be3fit.com/careers">Careers</a></li>
+          <li class="footer-links__item"><a class="footer-links__link" href="http://be3fit.com/contact">Contact Us</a></li>
+        </ul>
+      </section>
+      <a class="footer-nav__home-link" href="http://be3fit.com/"><img class="footer-nav__ufc-logo" alt="UFC GYM Logo" src="//d18e80b7izstoq.cloudfront.net/assets/ufc-logo-footer-f59e093e2c2a51d06a9e30e656236b8e.svg" /></a>      <section class="footer-legal">
+        <p class="footer-legal__copy">
+          &copy; UFC GYM&reg;. All Rights Reserved.
+        </p>
+
+        <ul class="footer-legal__links">
+          <li class="footer-legal__item"><a class="footer-legal__link" href="http://be3fit.com/terms">Terms of Service</a></li>
+          <li class="footer-legal__item"><a class="footer-legal__link" href="http://be3fit.com/privacy">Privacy Policy</a></li>
+          <li class="footer-legal__item"><a class="footer-legal__link" href="http://be3fit.com/accessibility">Accessibility</a></li>
+        </ul>
+
+        <p class="footer-legal__disclaimer" id="disclaimer">
+          *All claims regarding results you may achieve are dependent on many factors and your results may vary
+        </p>
+      </section>
+    </div>
+  </nav>
+</footer>
+
+    <script src="//d18e80b7izstoq.cloudfront.net/assets/application-0e7a357f28bf5c4dc2749bd3a16d151b.js"></script>
+    
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0020/4315.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+  </body>
+</html>

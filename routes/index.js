@@ -4,7 +4,7 @@ var User = require('../models/user.js');
 
 
 // GET /profile
-router.get('/profile', function (req, res, next) {
+router.get('/login', function (req, res, next) {
     if (!req.session.userId) {
         var err = new Error("You are not authorized to view this page.");
         err.status = 403;
@@ -15,8 +15,8 @@ router.get('/profile', function (req, res, next) {
             if (error) {
                 return next(error);
             } else {
-                return res.render('profile', { title: 'Profile', name: user.name, favorite: user.favoriteBook });
-            }
+                return res.render('login', { title: 'Member login', name: user.name, favorite: user.favoriteBook });
+            }/
         });
 });
 
